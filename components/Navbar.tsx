@@ -6,6 +6,8 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { buttonVariants } from './ui/button'
+import { UserButton } from '@clerk/nextjs'
+import { ThemeSwitcherBtn } from './ThemeSwitcherBtn'
 
 function Navbar() {
   return (
@@ -36,6 +38,10 @@ function DesktopNavbar() {
                             />
                         ) )}
                     </div>
+                </div>
+                <div className='flex items-center gap-2'>
+                    <ThemeSwitcherBtn />
+                    <UserButton afterSignOutUrl='/sign-in' />
                 </div>
             </nav>
         </div>
