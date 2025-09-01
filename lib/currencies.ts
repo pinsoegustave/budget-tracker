@@ -5,20 +5,19 @@ export const Currencies = [
         locale: "en-US"
     },
     {
-        value: "RWF",
-        label: "RWF",
-        locale: "en-US"
-    },
-
-    {
         value: "EUR",
-        label: " Euro",
+        label: "€ Euro",
         locale: "en-US"
     },
 
     {
         value: "GBP",
-        label: " Pound",
+        label: "£ Pound",
+        locale: "en-GB"
+    },
+    {
+        value: "YEN",
+        label: "¥ Yen",
         locale: "en-GB"
     },
 ]
